@@ -698,21 +698,37 @@ StScrollBar {
   }
 
   .calendar {
-    margin: 0 1.5em;
     margin-bottom: 1em;
   }
+
+    .calendar,
+    .datemenu-today-button {
+      margin: 0 1.5em;
+    }
 
     .datemenu-calendar-column {
       spacing: 0.5em;
       padding-bottom: 3em;
     }
 
-    .datemenu-date-label { //topmost date label
-      padding: .4em 1.7em;
-      text-align: center;
-      color: $fg_color;
-      font-weight: bold;
-      font-size: 110%;
+    .datemenu-today-button {
+      border-radius: 4px;
+      padding: .4em;
+    }
+
+    .datemenu-today-button {
+      &:hover,&:focus { background-color: lighten($bg_color,5%); }
+      &:active {
+        color: lighten($selected_fg_color,5%);
+        background-color: $selected_bg_color;
+      }
+    }
+
+    .datemenu-today-button .day-label {
+    }
+
+    .datemenu-today-button .date-label {
+      font-size: 1.5em;
     }
 
     .calendar-month-label {
