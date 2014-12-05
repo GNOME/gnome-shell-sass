@@ -702,7 +702,8 @@ StScrollBar {
   }
 
     .calendar,
-    .datemenu-today-button {
+    .datemenu-today-button,
+    .message-list-sections {
       margin: 0 1.5em;
     }
 
@@ -711,12 +712,22 @@ StScrollBar {
       padding-bottom: 3em;
     }
 
-    .datemenu-today-button {
+    .datemenu-today-button,
+    .message-list-section-title {
       border-radius: 4px;
       padding: .4em;
     }
 
-    .datemenu-today-button {
+    .message-list-section-list:ltr {
+      padding-left: .4em;
+    }
+
+    .message-list-section-list:rtl {
+      padding-right: .4em;
+    }
+
+    .datemenu-today-button,
+    .message-list-section-title {
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active {
         color: lighten($selected_fg_color,5%);
@@ -729,6 +740,11 @@ StScrollBar {
 
     .datemenu-today-button .date-label {
       font-size: 1.5em;
+    }
+
+    .message-list-section-title {
+      color: darken($fg_color,40%);
+      font-weight: bold;
     }
 
     .calendar-month-label {
@@ -801,6 +817,66 @@ StScrollBar {
         color: transparentize($fg_color,0.85);
         opacity: 0.5;
       }
+
+      /* Message list */
+      .message-list {
+        width: 340px;
+      }
+
+        .message-list-sections {
+          spacing: 1.5em;
+        }
+
+        .message-list-section,
+        .message-list-section-list {
+          spacing: 0.7em;
+        }
+
+        .message-list-section-title-box {
+          spacing: 0.4em;
+        }
+
+        .message-list-section-close > StIcon {
+          icon-size: 16px;
+          border-radius: 8px;
+          color: $bg_color;
+          background-color: darken($fg_color,60%);
+        }
+
+        /* FIXME: how do you do this in sass? */
+        .message-list-section-close:hover > StIcon,
+        .message-list-section-close:focus > StIcon {
+          background-color: darken($fg_color,40%);
+        }
+
+        .message {
+          background-color: lighten($bg_color,5%);
+          &:hover,&:focus { background-color: lighten($bg_color,15%); }
+        }
+
+          .message-icon-bin {
+            padding: 5px;
+          }
+
+          .message-icon-bin > StIcon {
+            icon-size: 48px;
+          }
+
+          .message-secondary-bin {
+            color: darken($fg_color,40%);
+          }
+
+          .message-secondary-bin > StIcon {
+            icon-size: 16px;
+          }
+
+          .message-title {
+            font-weight: bold;
+          }
+          .message-content {
+            padding: 5px;
+            spacing: 5px;
+          }
 
     .events-table { //right hand side
       width: 15em;
