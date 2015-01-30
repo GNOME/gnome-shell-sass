@@ -693,10 +693,19 @@ StScrollBar {
 }
 
   // calendar popover
-  .calendar {
-    padding: .4em 1.75em .8em 1.75em;
-    margin-bottom: 2em;
+  #calendarArea {
+    padding: 0.75em 1.0em;
   }
+
+  .calendar {
+    margin: 0 1.5em;
+    margin-bottom: 1em;
+  }
+
+    .datemenu-calendar-column {
+      spacing: 0.5em;
+      padding-bottom: 3em;
+    }
 
     .datemenu-date-label { //topmost date label
       padding: .4em 1.7em;
@@ -704,12 +713,6 @@ StScrollBar {
       color: $fg_color;
       font-weight: bold;
       font-size: 110%;
-    }
-
-    .calendar-vertical-separator {
-      width: .3em;
-      -stipple-width: 1px;
-      -stipple-color: $_bubble_borders_color;
     }
 
     .calendar-month-label {
