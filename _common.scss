@@ -703,6 +703,7 @@ StScrollBar {
 
     .calendar,
     .datemenu-today-button,
+    .datemenu-displays-box,
     .message-list-sections {
       margin: 0 1.5em;
     }
@@ -713,6 +714,7 @@ StScrollBar {
     }
 
     .datemenu-today-button,
+    .world-clocks-button,
     .message-list-section-title {
       border-radius: 4px;
       padding: .4em;
@@ -727,6 +729,7 @@ StScrollBar {
     }
 
     .datemenu-today-button,
+    .world-clocks-button,
     .message-list-section-title {
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active {
@@ -742,9 +745,14 @@ StScrollBar {
       font-size: 1.5em;
     }
 
+    .world-clocks-header,
     .message-list-section-title {
       color: darken($fg_color,40%);
       font-weight: bold;
+    }
+
+    .world-clocks-grid {
+      spacing-rows: 0.4em;
     }
 
     .calendar-month-label {
