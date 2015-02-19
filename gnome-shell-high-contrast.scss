@@ -1,8 +1,0 @@
-@import "_high-contrast-colors"; //use gtk colors
-@import "_drawing";
-@import "_common";
-
-//force symbolic icons
-stage {
-  -st-icon-style: symbolic;
-}
