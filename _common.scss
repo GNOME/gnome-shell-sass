@@ -1321,22 +1321,21 @@ StScrollBar {
   .notification {
     font-size: 11pt;
     width: 34em;
-    border-radius: 6px 6px 0 0;
+    margin: 5px;
+    border-radius: 6px;
     color: $_bubble_fg_color;
     background-color: $_bubble_bg_color;
     border: 1px solid $borders_color;
-    border-bottom-width: 0;
     //box-shadow: 0 1px 4px black;
     spacing-rows: 4px;
-    padding: 8px 8px 4px 8px;
+    padding: 8px;
     spacing-columns: 10px;
-    &.multi-line-notification { padding-bottom: 8px; }
   }
   .notification-unexpanded {
     // We want to force the actor at a specific size, irrespective
     // of its minimum and preferred size, so we override both
-    min-height: 36px;
-    height: 36px;
+    min-height: 48px;
+    height: 48px;
   }
   // We use row-span = 2 for the image cell, which prevents its height preferences to be
   // taken into account during allocation, so its height ends up being limited by the height
