@@ -1061,9 +1061,6 @@ StScrollBar {
     &:hover { background-color: $selected_bg_color; color: $selected_fg_color; }
   }
 
-  .messages-indicator { color: transparentize($osd_fg_color,.2); height: 32px; }
-  .messages-indicator-contents { spacing: 12px; padding-bottom: 12px; }
-
   //search entry
   .search-entry {
     width: 320px;
