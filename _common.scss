@@ -1191,13 +1191,13 @@ StScrollBar {
     .page-indicator-icon {
       width: 18px;
       height: 18px;
-      background-image: url(page-indicator-inactive.svg);
+      background-image: url(resource:///org/gnome/shell/theme/age-indicator-inactive.svg);
     }
 
-    &:hover .page-indicator-icon { background-image: url(page-indicator-hover.svg); }
-    &:active .page-indicator-icon { background-image: url(page-indicator-active.svg); }
+    &:hover .page-indicator-icon { background-image: url(resource:///org/gnome/shell/theme/age-indicator-hover.svg); }
+    &:active .page-indicator-icon { background-image: url(resource:///org/gnome/shell/theme/age-indicator-active.svg); }
     &:checked .page-indicator-icon,
-    &:checked:active { background-image: url(page-indicator-checked.svg); }
+    &:checked:active { background-image: url(resource:///org/gnome/shell/theme/age-indicator-checked.svg); }
   }
 
   .no-frequent-applications-label { @extend %status_text; }
@@ -1704,7 +1704,7 @@ StScrollBar {
 }
 
 #lockDialogGroup {
-  background: #2e3436 url(noise-texture.png);
+  background: #2e3436 url(resource:///org/gnome/shell/theme/oise-texture.png);
   background-repeat: repeat;
 }
 
