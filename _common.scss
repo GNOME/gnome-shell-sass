@@ -1373,18 +1373,6 @@ StScrollBar {
     paddinf-top: 18px;
     spacing: 6px;
   }
-  //Message tray items
-  .summary-source {
-    border-radius: 0;
-    -st-natural-width: 60px; //FIXME left aligned rather than centered
-    padding: 9px;
-    transition-duration: 100ms;
-  }
-  .summary-source-button {
-    &:hover .summary-source,
-    &:selected .summary-source,
-    &:focus .summary-source { background-color: lighten($osd_bg_color,2%); }
-  }
   .summary-source-counter {
     font-size: 10pt;
     font-weight: bold;
@@ -1398,32 +1386,6 @@ StScrollBar {
     border-radius: 0.9em; // should be 0.8 but whatever; wish I could do 50%;
   }
 
-  //Message tray popovers
-  .summary-boxpointer {
-    -arrow-border-radius: 15px;
-    -arrow-background-color: $_bubble_bg_color;
-    -arrow-base: 36px;
-    -arrow-rise: 18px;
-    color: $fg_color;
-    -boxpointer-gap: 4px;
-    .notification {
-      border-radius: 9px;
-      border-width: 0; //temporary workaround for border brokenness
-      background-color: transparent !important;
-      padding-bottom: 12px;
-    }
-    #summary-right-click-menu {
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
-  }
-  .summary-notification-stack-scrollview {
-    max-height: 24em;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    &:ltr { padding-right: 8px; }
-    &:rtl { padding-left: 8px; }
-  }
   .notification-scrollview {
     max-height: 18em;
     -st-vfade-offset: 24px;
