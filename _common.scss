@@ -1318,6 +1318,34 @@ StScrollBar {
   .url-highlighter { link-color: $selected_bg_color; }
 
   // Banners
+  .notification-banner {
+    font-size: 11pt;
+    width: 34em;
+    margin: 5px;
+    border-radius: 6px;
+    color: $_bubble_fg_color;
+    background-color: $_bubble_bg_color;
+    border: 1px solid $borders_color;
+    //box-shadow: 0 1px 4px black;
+    &:hover { background-color: $_bubble_bg_color; }
+    &:focus { background-color: $_bubble_bg_color; }
+
+    .notification-icon { padding: 5px; }
+    .notification-content { padding: 5px; spacing: 5px; }
+    .secondary-icon { icon-size: 1.09em; }
+    .notification-actions {
+      background-color: $borders_color;
+      padding-top: 2px;
+      spacing: 1px;
+    }
+    .notification-button {
+      padding: 4px 4px 5px;
+      background-color: darken($_bubble_bg_color,5%);
+      &:first-child { border-radius: 0 0 0 6px; }
+      &:last-child { border-radius: 0 0 6px 0; }
+      &:hover, &focus { background-color: darken($_bubble_bg_color,2%); }
+    }
+  }
   .notification {
     font-size: 11pt;
     width: 34em;
