@@ -114,11 +114,11 @@ StScrollBar {
   StBin {
     width: 24px;
     height: 22px;
-    background-image: url("checkbox-off.svg");
+    background-image: url("resource:///org/gnome/shell/theme/checkbox-off.svg");
   }
-  &:focus Stbin { background-image: url("checkbox-off-focused.svg"); }
-  &:checked Stbin { background-image: url("checkbox.svg"); }
-  &:focus:checked Stbin { background-image: url("checkbox-focused.svg"); }
+  &:focus Stbin { background-image: url("resource:///org/gnome/shell/theme/checkbox-off-focused.svg"); }
+  &:checked Stbin { background-image: url("resource:///org/gnome/shell/theme/checkbox.svg"); }
+  &:focus:checked Stbin { background-image: url("resource:///org/gnome/shell/theme/checkbox-focused.svg"); }
 }
 
 /* Switches */
@@ -130,8 +130,8 @@ StScrollBar {
 
   @each $v in us, intl {
     .toggle-switch-#{$v} {
-      background-image: url("toggle-off-#{$v}.svg");
-      &:checked { background-image: url("toggle-on-#{$v}.svg"); }
+      background-image: url("resource:///org/gnome/shell/theme/toggle-off-#{$v}.svg");
+      &:checked { background-image: url("resource:///org/gnome/shell/theme/toggle-on-#{$v}.svg"); }
     }
   }
 
@@ -578,7 +578,7 @@ StScrollBar {
     height: 50px;
     background-color: $selected_bg_color;
     color: $selected_fg_color;
-    //background-image: url("ws-switch-arrow-up.png");
+    //background-image: url("resource:///org/gnome/shell/theme/ws-switch-arrow-up.png");
     background-size: 32px;
     border-radius: 8px;
   }
@@ -730,12 +730,12 @@ StScrollBar {
     }
 
       .calendar-change-month-back { //arrow back
-        background-image: url("calendar-arrow-left.svg");
-        &:rtl { background-image: url("calendar-arrow-right.svg"); }
+        background-image: url("resource:///org/gnome/shell/theme/calendar-arrow-left.svg");
+        &:rtl { background-image: url("resource:///org/gnome/shell/theme/calendar-arrow-right.svg"); }
       }
       .calendar-change-month-forward { //arrow foreward
-        background-image: url("calendar-arrow-right.svg");
-        &:rtl { background-image: url("calendar-arrow-left.svg"); }
+        background-image: url("resource:///org/gnome/shell/theme/calendar-arrow-right.svg");
+        &:rtl { background-image: url("resource:///org/gnome/shell/theme/calendar-arrow-left.svg"); }
       }
 
     .calendar-day-base {
@@ -822,7 +822,7 @@ StScrollBar {
   }
 
   #appMenu {
-    spinner-image: url("process-working.svg");
+    spinner-image: url("resource:///org/gnome/shell/theme/process-working.svg");
     spacing: 4px;
 
     .label-shadow { color: transparent; }
@@ -854,12 +854,12 @@ StScrollBar {
 .ripple-box {
     width: 52px;
     height: 52px;
-    background-image: url("corner-ripple-ltr.png");
+    background-image: url("resource:///org/gnome/shell/theme/corner-ripple-ltr.png");
     background-size: contain;
 }
 
 .ripple-box:rtl {
-    background-image: url("corner-ripple-rtl.png");
+    background-image: url("resource:///org/gnome/shell/theme/corner-ripple-rtl.png");
 }
 
 // not really top bar only
@@ -869,7 +869,7 @@ StScrollBar {
 //close buttons
 
 .window-close, .notification-close {
-  background-image: url("close-window.svg");
+  background-image: url("resource:///org/gnome/shell/theme/close-window.svg");
   background-size: 32px;
   height: 32px;
   width: 32px;
@@ -1042,7 +1042,7 @@ StScrollBar {
   .search-provider-icon-more {
     width: 16px;
     height: 16px;
-    background-image: url("more-results.svg");
+    background-image: url("resource:///org/gnome/shell/theme/more-results.svg");
   }
 
 
@@ -1062,7 +1062,7 @@ StScrollBar {
     }
 
     .placeholder {
-      background-image: url("dash-placeholder.svg");
+      background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
       background-size: contain;
       height: 24px;
     }
@@ -1246,7 +1246,7 @@ StScrollBar {
 /* NOTIFICATIONS & MESSAGE TRAY */
 
 #message-tray {
-  background: darken($osd_bg_color,10%) url("noise-texture.png");
+  background: darken($osd_bg_color,10%) url("resource:///org/gnome/shell/theme/noise-texture.png");
   background-repeat: repeat;
   height: 72px;
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
