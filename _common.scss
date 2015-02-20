@@ -1394,8 +1394,10 @@ StScrollBar {
   .secondary-icon { icon-size: 1.09em; }
 
   //chat bubbles
+  .chat-body { spacing: 5px; }
+  .chat-response { margin: 5px; }
   .chat-log-message { color: darken($fg_color,10%); }
-  .chat-empty-line { font-size: 4px; }
+  .chat-new-group { padding-top: 1em; }
   .chat-received {
     padding-left: 4px;
     &:rtl { padding-left: 0px; padding-right: 4px; }
@@ -1412,7 +1414,6 @@ StScrollBar {
     color: darken($fg_color,20%);
     &:rtl { padding-left: 0; padding-right: 4px; }
   }
-  .chat-notification-scrollview { max-height: 22em; }
 
   //hotplug
   .hotplug-transient-box {
