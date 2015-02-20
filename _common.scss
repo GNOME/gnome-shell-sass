@@ -951,7 +951,7 @@ StScrollBar {
 
 //close buttons
 
-.window-close, .notification-close {
+.window-close {
   background-image: url("resource:///org/gnome/shell/theme/close-window.svg");
   background-size: 32px;
   height: 32px;
@@ -960,12 +960,6 @@ StScrollBar {
   .window-close {
     -shell-close-overlap: 16px;
     &:rtl { -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5); }
-  }
-  .notification-close {
-    -shell-close-overlap-x: 14px;
-    -shell-close-overlap-y: -12px;
-
-    &:rtl { -shell-close-overlap-x: -14px; }
   }
 
 /* NETWORK DIALOGS */
@@ -1330,37 +1324,6 @@ StScrollBar {
       &:hover, &focus { background-color: darken($_bubble_bg_color,2%); }
     }
   }
-  .notification {
-    font-size: 11pt;
-    width: 34em;
-    margin: 5px;
-    border-radius: 6px;
-    color: $_bubble_fg_color;
-    background-color: $_bubble_bg_color;
-    border: 1px solid $borders_color;
-    //box-shadow: 0 1px 4px black;
-    spacing-rows: 4px;
-    padding: 8px;
-    spacing-columns: 10px;
-  }
-  .notification-unexpanded {
-    // We want to force the actor at a specific size, irrespective
-    // of its minimum and preferred size, so we override both
-    min-height: 48px;
-    height: 48px;
-  }
-  // We use row-span = 2 for the image cell, which prevents its height preferences to be
-  // taken into account during allocation, so its height ends up being limited by the height
-  // of the content in the other rows. To avoid showing a stretched image, we set the minimum
-  // height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 = 159
-  .notification-with-image {
-    min-height: 159px;
-  }
-  .notification-body { spacing: 5px; }
-  .notification-actions {
-    paddinf-top: 18px;
-    spacing: 6px;
-  }
   .summary-source-counter {
     font-size: 10pt;
     font-weight: bold;
@@ -1374,23 +1337,6 @@ StScrollBar {
     border-radius: 0.9em; // should be 0.8 but whatever; wish I could do 50%;
   }
 
-  .notification-scrollview {
-    max-height: 18em;
-    -st-vfade-offset: 24px;
-    &:ltr > StScrollBar { padding-left: 6px; }
-    &:rtl > StScrollBar { padding-right: 6px; }
-  }
-  .notification-button {
-    //-st-natural-width: 140px;
-    height: 24px;
-  }
-  .notification-icon-button {
-    border-radius: 5px;
-    padding: 5px;
-    height: 24px; width: 24px;
-    &:focus { }
-    & > StIcon { icons-size: 16px; width: 16px; height: 16px; padding: 2px; }
-  }
   .secondary-icon { icon-size: 1.09em; }
 
   //chat bubbles
