@@ -766,7 +766,6 @@ StScrollBar {
       color: white;
       background-color: transparent;
       width: 32px;
-      background-position: center;
       border-radius: 4px;
       &:hover, &:focus { background-color: transparentize($fg_color,0.95); }
       &:active { background-color: transparentize($bg_color,0.95); }
