@@ -161,7 +161,7 @@ StScrollBar {
   }
   .run-dialog-button-box { padding-top: 1em; }
   .run-dialog-label {
-    font-size: fontsize($font-size + 1.1);
+    @include fontsize($font-size + 1.1);
     font-weight: bold;
     color: darken($osd_fg_color,10%);
     padding-bottom: .4em;
@@ -176,7 +176,7 @@ StScrollBar {
   .show-processes-dialog-subject,
   .mount-question-dialog-subject,
   .end-session-dialog-subject { //this should be a generic header class
-    font-size: fontsize($font-size * 1.3);
+    @include fontsize($font-size * 1.3);
   }
 
 /* End Session Dialog */
