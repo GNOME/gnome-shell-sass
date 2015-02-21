@@ -659,6 +659,8 @@ StScrollBar {
 
     .app-menu-icon {
       -st-icon-style: symbolic;
+      margin-left: 4px;
+      margin-right: 4px;
     }
 
     &:hover {
