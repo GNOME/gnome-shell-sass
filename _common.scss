@@ -121,9 +121,9 @@ StScrollBar {
     height: 22px;
     background-image: url("resource:///org/gnome/shell/theme/checkbox-off.svg");
   }
-  &:focus Stbin { background-image: url("resource:///org/gnome/shell/theme/checkbox-off-focused.svg"); }
-  &:checked Stbin { background-image: url("resource:///org/gnome/shell/theme/checkbox.svg"); }
-  &:focus:checked Stbin { background-image: url("resource:///org/gnome/shell/theme/checkbox-focused.svg"); }
+  &:focus StBin { background-image: url("resource:///org/gnome/shell/theme/checkbox-off-focused.svg"); }
+  &:checked StBin { background-image: url("resource:///org/gnome/shell/theme/checkbox.svg"); }
+  &:focus:checked StBin { background-image: url("resource:///org/gnome/shell/theme/checkbox-focused.svg"); }
 }
 
 /* Switches */
