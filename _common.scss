@@ -839,7 +839,7 @@ StScrollBar {
 
       /* Message list */
       .message-list {
-        width: 340px;
+        width: 420px;
       }
 
         .message-list-sections {
@@ -871,10 +871,12 @@ StScrollBar {
         .message {
           background-color: lighten($bg_color,5%);
           &:hover,&:focus { background-color: lighten($bg_color,15%); }
+          border-radius: 3px;
         }
 
           .message-icon-bin {
-            padding: 5px;
+            padding: 8px 0px 8px 8px;
+            &:rtl { padding: 8px 8px 8px 0px; }
           }
 
           .message-icon-bin > StIcon {
@@ -892,9 +894,9 @@ StScrollBar {
           .message-title {
             font-weight: bold;
           }
+
           .message-content {
-            padding: 5px;
-            spacing: 5px;
+            padding: 8px;
           }
 
 
