@@ -1493,6 +1493,26 @@ StScrollBar {
 
 /* Eeeky things */
 
+$legacy_icon_size: 24px;
+
+.legacy-tray {
+  background-color: $bg_color;
+  border: 1px solid $borders_color;
+  border-bottom-width: 0;
+  &:ltr { border-radius: 0 6px 0 0; border-left-width: 0; }
+  &:rtl { border-radius: 6px 0 0 0; border-right-width: 0; }
+}
+
+.legacy-tray-handle {
+  & StIcon { icon-size: $legacy_icon_size; }
+}
+
+.legacy-tray-icon-box {
+  padding: 6px;
+  spacing: 12px;
+  & StButton { width: $legacy_icon_size; height: $legacy_icon_size }
+}
+
 //magnifier
 
 .magnifier-zoom-region {
