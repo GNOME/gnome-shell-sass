@@ -721,10 +721,8 @@ StScrollBar {
       margin: 0 1.5em;
     }
 
-    .datemenu-calendar-column {
-      spacing: 0.5em;
-      padding-bottom: 3em;
-    }
+    .datemenu-calendar-column { spacing: 0.5em; }
+    .datemenu-displays-section { padding-bottom: 3em; }
 
     .datemenu-today-button,
     .world-clocks-button,
