@@ -1673,10 +1673,10 @@ $legacy_icon_size: 24px;
     &:hover { background-color: $selected_bg_color; color: $selected_fg_color; }
     .login-dialog-timed-login-indicator {
       height: 2px;
-      //background-color: rgba(0,0,0,0.0);
-      background-color: transparent;
+      margin: 2px 0 0 0;
+      background-color: $osd_fg_color;
     }
-    &:focus .login-dialog-timed-login-indicator { background-color: $osd_bg_color; }
+    &:focus .login-dialog-timed-login-indicator { background-color: $selected_fg_color; }
   }
 
   .login-dialog-username,
