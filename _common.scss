@@ -74,10 +74,13 @@ StEntry {
 
 /* Scrollbars */
 
-StScrollBar {
-  padding: 0;
+StScrollView {
   &.vfade { -st-vfade-offset: 68px; }
   &.hfade { -st-hfade-offset: 68px; }
+}
+
+StScrollBar {
+  padding: 0;
 
   StScrollView & {
     min-width: 14px;
