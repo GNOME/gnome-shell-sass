@@ -105,14 +105,14 @@ StScrollBar {
 /* Slider */
 
 .slider {
-    height: 1em;
-    -slider-height: 0.3em;
-    -slider-background-color: $insensitive_bg_color; //background of the trough
-    -slider-border-color: $borders_color; //trough border color
-    -slider-active-background-color: $selected_bg_color; //active trough fill
-    -slider-active-border-color: darken($selected_bg_color,10%); //active trough border
-    -slider-border-width: 1px;
-    -slider-handle-radius: 6px;
+  height: 1em;
+  -slider-height: 0.3em;
+  -slider-background-color: $insensitive_bg_color; //background of the trough
+  -slider-border-color: $borders_color; //trough border color
+  -slider-active-background-color: $selected_bg_color; //active trough fill
+  -slider-active-border-color: darken($selected_bg_color,10%); //active trough border
+  -slider-border-width: 1px;
+  -slider-handle-radius: 6px;
 }
 
 /* Check Boxes */
@@ -131,9 +131,9 @@ StScrollBar {
 
 /* Switches */
 .toggle-switch {
-    width: 65px;
-    height: 22px;
-    background-size: contain;
+  width: 65px;
+  height: 22px;
+  background-size: contain;
 }
 
   @each $v in us, intl {
@@ -189,8 +189,8 @@ StScrollBar {
 
 /* End Session Dialog */
 .end-session-dialog {
-    spacing: 42px;
-    border: 3px solid $_bubble_borders_color;
+  spacing: 42px;
+  border: 3px solid $_bubble_borders_color;
 }
 
   .end-session-dialog-list {
@@ -394,14 +394,14 @@ StScrollBar {
 }
 
   .polkit-dialog-user-root-label {
-      color: $warning_color;
+    color: $warning_color;
   }
 
   .polkit-dialog-user-icon {
-      border-radius: 5px;
-      background-size: contain;
-      width: 48px;
-      height: 48px;
+    border-radius: 5px;
+    background-size: contain;
+    width: 48px;
+    height: 48px;
   }
 
 /* Network Agent Dialog */
@@ -462,18 +462,18 @@ StScrollBar {
 
 
   .popup-menu-ornament {
-      text-align: right;
-      width: 1em;
+    text-align: right;
+    width: 1em;
   }
   .popup-menu-boxpointer,
   .candidate-popup-boxpointer {
-      -arrow-border-radius: 3px;
-      -arrow-background-color: $bg_color;
-      -arrow-border-width: 1px;
-      -arrow-border-color: $borders_color;
-      -arrow-base: 24px;
-      -arrow-rise: 11px;
-      -arrow-box-shadow: 0 1px 3px black; //dreaming. bug #689995
+    -arrow-border-radius: 3px;
+    -arrow-background-color: $bg_color;
+    -arrow-border-width: 1px;
+    -arrow-border-color: $borders_color;
+    -arrow-base: 24px;
+    -arrow-rise: 11px;
+    -arrow-box-shadow: 0 1px 3px black; //dreaming. bug #689995
   }
 
   .popup-separator-menu-item {
@@ -516,8 +516,8 @@ StScrollBar {
 
 /* App Switcher */
 .switcher-popup {
-    padding: 8px;
-    spacing: 16px;
+  padding: 8px;
+  spacing: 16px;
 }
 
 .osd-window,
@@ -567,9 +567,9 @@ StScrollBar {
   }
 
   .input-source-switcher-symbol {
-     font-size: 34pt;
-     width: 96px;
-     height: 96px;
+    font-size: 34pt;
+    width: 96px;
+    height: 96px;
   }
 
 /* Workspace Switcher */
@@ -597,10 +597,10 @@ StScrollBar {
   }
 
   .ws-switcher-box {
-      height: 50px;
-      border: 1px solid transparentize($osd_fg_color,0.9);
-      background: transparent;
-      border-radius: 8px;
+    height: 50px;
+    border: 1px solid transparentize($osd_fg_color,0.9);
+    background: transparent;
+    border-radius: 8px;
   }
 
 %osd-panel {
@@ -939,14 +939,14 @@ StScrollBar {
 
 //Activities Ripples
 .ripple-box {
-    width: 52px;
-    height: 52px;
-    background-image: url("resource:///org/gnome/shell/theme/corner-ripple-ltr.png");
-    background-size: contain;
+  width: 52px;
+  height: 52px;
+  background-image: url("resource:///org/gnome/shell/theme/corner-ripple-ltr.png");
+  background-size: contain;
 }
 
 .ripple-box:rtl {
-    background-image: url("resource:///org/gnome/shell/theme/corner-ripple-rtl.png");
+  background-image: url("resource:///org/gnome/shell/theme/corner-ripple-rtl.png");
 }
 
 // not really top bar only
@@ -975,71 +975,41 @@ StScrollBar {
 /* NETWORK DIALOGS */
 
 .nm-dialog {
-    max-height: 500px;
-    min-height: 450px;
-    min-width: 470px;
+  max-height: 500px;
+  min-height: 450px;
+  min-width: 470px;
 }
 
-  .nm-dialog-content {
-      spacing: 20px;
-  }
-
-  .nm-dialog-header-hbox {
-      spacing: 10px;
-  }
-
-  .nm-dialog-airplane-box {
-      spacing: 12px;
-  }
+  .nm-dialog-content { spacing: 20px; }
+  .nm-dialog-header-hbox { spacing: 10px; }
+  .nm-dialog-airplane-box { spacing: 12px; }
 
   .nm-dialog-airplane-headline {
-      font-weight: bold;
-      text-align: center;
+    font-weight: bold;
+    text-align: center;
   }
 
-  .nm-dialog-airplane-text {
-      color: $fg_color;
-  }
-
-  .nm-dialog-header-icon {
-      icon-size: 32px;
-  }
-
-  .nm-dialog-scroll-view {
-      border: 2px solid $borders_color;
-  }
-
-  .nm-dialog-header {
-      font-weight: bold;
-  }
+  .nm-dialog-airplane-text { color: $fg_color; }
+  .nm-dialog-header-icon { icon-size: 32px; }
+  .nm-dialog-scroll-view { border: 2px solid $borders_color; }
+  .nm-dialog-header { font-weight: bold; }
 
   .nm-dialog-item {
-      font-size: 110%;
-      border-bottom: 1px solid $borders_color;
-      padding: 12px;
-      spacing: 20px;
+    font-size: 110%;
+    border-bottom: 1px solid $borders_color;
+    padding: 12px;
+    spacing: 20px;
   }
 
   .nm-dialog-item:selected {
-      background-color: $selected_bg_color;
-      color: $selected_fg_color;
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
   }
 
-  .nm-dialog-icons {
-      spacing: .5em;
-  }
-
-  .nm-dialog-icon {
-      icon-size: 16px;
-  }
-
-  .no-networks-label {
-      color: #999999;
-  }
-
-  .no-networks-box {
-      spacing: 12px;
-  }
+  .nm-dialog-icons { spacing: .5em; }
+  .nm-dialog-icon { icon-size: 16px; }
+  .no-networks-label { color: #999999; }
+  .no-networks-box { spacing: 12px; }
 
 /* OVERVIEW */
 
@@ -1103,9 +1073,9 @@ StScrollBar {
   }
 
   #searchResultsContent {
-      padding-left: 20px;
-      padding-right: 20px;
-      spacing: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    spacing: 16px;
   }
 
   .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
@@ -1529,13 +1499,11 @@ $legacy_icon_size: 24px;
 }
 
   .keyboard-layout {
-      spacing: 10px;
-      padding: 10px;
+    spacing: 10px;
+    padding: 10px;
   }
 
-  .keyboard-row {
-      spacing: 15px;
-  }
+  .keyboard-row { spacing: 15px; }
 
   .keyboard-key {
     @include button(normal);
@@ -1557,15 +1525,15 @@ $legacy_icon_size: 24px;
   }
 
   .keyboard-subkeys { //long press on a key popup
-      color: white;
-      padding: 5px;
-      -arrow-border-radius: 10px;
-      -arrow-background-color: transparentize($osd_bg_color, 0.3);
-      -arrow-border-width: 2px;
-      -arrow-border-color: $_bubble_borders_color;
-      -arrow-base: 20px;
-      -arrow-rise: 10px;
-      -boxpointer-gap: 5px;
+    color: white;
+    padding: 5px;
+    -arrow-border-radius: 10px;
+    -arrow-background-color: transparentize($osd_bg_color, 0.3);
+    -arrow-border-width: 2px;
+    -arrow-border-color: $_bubble_borders_color;
+    -arrow-base: 20px;
+    -arrow-rise: 10px;
+    -boxpointer-gap: 5px;
   }
 
 // IBus Candidate Popup
