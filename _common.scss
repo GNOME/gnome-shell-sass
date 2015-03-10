@@ -1303,7 +1303,7 @@ StScrollBar {
 
 /* NOTIFICATIONS & MESSAGE TRAY */
 
-  .url-highlighter { link-color: $selected_bg_color; }
+  .url-highlighter { link-color: lighten($selected_bg_color,10%); }
 
   // Banners
   .notification-banner {
