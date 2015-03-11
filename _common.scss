@@ -438,13 +438,9 @@ StScrollBar {
       box-shadow: inset 0 1px 0px lighten($borders_color,5%);
       font-weight: bold;
     }
-    &:hover,&:focus { background-color: transparentize($fg_color,0.9); color: $fg_color; }
+    &.selected { background-color: transparentize($fg_color,0.9); color: $fg_color; }
     &:active { background-color: $selected_bg_color; color: $selected_fg_color; }
     &:insensitive { color: transparentize($fg_color,.5); }
-  }
-
-  .selected {
-    background-color: $selected_bg_color;
   }
 
   .popup-inactive-menu-item { //all icons and other graphical elements
