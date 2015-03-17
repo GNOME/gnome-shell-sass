@@ -443,7 +443,7 @@ StScrollBar {
     &:insensitive { color: transparentize($fg_color,.5); }
   }
 
-  .active {
+  .selected {
     background-color: $selected_bg_color;
   }
 
