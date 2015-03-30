@@ -652,7 +652,7 @@ StScrollBar {
       -panel-corner-border-color: lighten($selected_bg_color,5%);
     }
 
-    &.lock-screen, &.login-screen, &unlock-screen {
+    &.lock-screen, &.login-screen, &.unlock-screen {
       -panel-corner-radius: 0;
       -panel-corner-background-color: transparent;
       -panel-corner-border-color: transparent;
