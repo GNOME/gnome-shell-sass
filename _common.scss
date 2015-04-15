@@ -826,8 +826,9 @@ StScrollBar {
         border: 1px solid transparentize($borders_color,0.5);
       }
       .calendar-day-with-events {
-        color: darken($fg_color,5%);
+        color: lighten($fg_color,10%);
         font-weight: bold;
+        background-image: url("resource:///org/gnome/shell/theme/calendar-today.svg");
       }
       .calendar-other-month-day {
         color: transparentize($fg_color,0.85);
