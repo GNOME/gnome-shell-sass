@@ -897,7 +897,12 @@ StScrollBar {
           }
 
           .message-icon-bin > StIcon {
-            icon-size: 48px;
+            icon-size: 32px;
+          }
+
+          .message-secondary-bin {
+            &:ltr { padding-left: 8px; }
+            &:rtl { padding-right: 8px; }
           }
 
           .message-secondary-bin {
@@ -910,10 +915,12 @@ StScrollBar {
 
           .message-title {
             font-weight: bold;
+            font-size: 1.1em;
           }
 
           .message-content {
             padding: 8px;
+            font-size: .9em;
           }
 
 
