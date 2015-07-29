@@ -50,6 +50,28 @@ stage {
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
   &:active { @include button(active); }
+
+}
+
+.modal-dialog-linked-button {
+  border-right-width: 1px;
+  @include button(normal);
+  &:insensitive { @include button(insensitive); }
+  &:active { @include button(active); }
+  &:focus { @include button(focus); }
+  padding: 12px;
+
+  &:first-child {
+    border-radius: 0px 0px 0px 6px;
+  }
+  &:last-child {
+    border-right-width: 0px;
+    border-radius: 0px 0px 6px 0px;
+  }
+  &:first-child:last-child {
+    border-right-width: 0px;
+    border-radius: 0px 0px 6px 6px;
+  }
 }
 
 /* Entries */
@@ -156,12 +178,13 @@ StScrollBar {
 .flashspot { background-color: white; }
 
 .modal-dialog {
-  border-radius: 5px;
+  border-radius: 9px;
   color: $osd_fg_color;
   background-color: transparentize(darken($osd_bg_color,10%),0.05);
   border: 3px solid transparentize($osd_fg_color,0.5);
-  padding: 24px;
-
+  .modal-dialog-content-box {
+    padding: 24px;
+  }
   .run-dialog-entry { width: 20em; margin-bottom: 6px; }
   .run-dialog-error-box {
     padding-top: 16px;
@@ -176,10 +199,6 @@ StScrollBar {
   }
 
 }
-  .button-dialog-button-box {
-    spacing: 18px;
-    padding-top: 48px;
-  }
 
   .show-processes-dialog-subject,
   .mount-question-dialog-subject,
@@ -971,7 +990,10 @@ StScrollBar {
   min-width: 470px;
 }
 
-  .nm-dialog-content { spacing: 20px; }
+  .nm-dialog-content {
+    spacing: 20px;
+    padding: 24px;
+  }
   .nm-dialog-header-hbox { spacing: 10px; }
   .nm-dialog-airplane-box { spacing: 12px; }
 
