@@ -926,9 +926,13 @@ StScrollBar {
 
   // a little unstructured mess:
 
-  .system-switch-user-submenu-icon {
-    icon-size: 24px;
-    border: 1px solid transparentize($fg_color,0.6);
+  .system-switch-user-submenu-icon.user-icon {
+    icon-size: 20px;
+    padding: 0 2px;
+  }
+  .system-switch-user-submenu-icon.default-icon {
+    icon-size: 16px;
+    padding: 0 4px;
   }
 
   #appMenu {
@@ -939,7 +943,7 @@ StScrollBar {
   }
 
   .aggregate-menu {
-    width: 360px;
+    width: 280px;
     .popup-menu-icon { padding: 0 4px; }
   }
 
