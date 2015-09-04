@@ -435,10 +435,10 @@ StScrollBar {
   spacing-columns: 1em;
 }
 
-/* Popvers/Menus */
+/* Popovers/Menus */
 
 .popup-menu {
-  min-width: 200px;
+  min-width: 15em;
 
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
@@ -856,7 +856,7 @@ StScrollBar {
 
       /* Message list */
       .message-list {
-        width: 420px;
+        width: 31.5em;
       }
 
         .message-list-sections {
@@ -943,7 +943,7 @@ StScrollBar {
   }
 
   .aggregate-menu {
-    min-width: 280px;
+    min-width: 21em;
     .popup-menu-icon { padding: 0 4px; }
   }
 
