@@ -1078,7 +1078,7 @@ StScrollBar {
     width: 320px;
     padding: 7px 9px;
     border-radius: 6px;
-    border-color: $osd_fg_color;
+    border-color: darken($osd_fg_color,50%);
     color: $osd_fg_color;
     background-color: $osd_bg_color;
     &:focus {
