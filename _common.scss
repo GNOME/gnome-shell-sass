@@ -1078,9 +1078,13 @@ StScrollBar {
     width: 320px;
     padding: 7px 9px;
     border-radius: 6px;
+    border-color: $osd_fg_color;
+    color: $osd_fg_color;
+    background-color: $osd_bg_color;
     &:focus {
       padding: 6px 8px;
       border-width: 2px;
+      border-color: $selected_bg_color;
     }
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
