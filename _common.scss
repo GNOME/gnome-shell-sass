@@ -719,6 +719,11 @@ StScrollBar {
     spacing: 2px;
   }
 
+  // spacing between power icon and (optional) percentage label
+  .power-status.panel-status-indicators-box {
+    spacing: 0;
+  }
+
   .screencast-indicator { color: $warning_color; }
 }
 
