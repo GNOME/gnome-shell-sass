@@ -858,6 +858,16 @@ StScrollBar {
         color: transparentize($fg_color,0.85);
         opacity: 0.5;
       }
+      .calendar-week-number {
+        font-size: 70%;
+        font-weight: bold;
+        width: 2.8em; height: 2em;
+        border-radius: 2px 1em 2px 2px;
+        padding: 0.9em 0 0;
+        margin: 3px;
+        background-color: transparentize($fg_color,0.9);
+        color: $bg_color;
+      }
 
       /* Message list */
       .message-list {
