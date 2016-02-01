@@ -861,11 +861,11 @@ StScrollBar {
       .calendar-week-number {
         font-size: 70%;
         font-weight: bold;
-        width: 2.8em; height: 2em;
-        border-radius: 2px 1em 2px 2px;
-        padding: 0.9em 0 0;
-        margin: 3px;
-        background-color: transparentize($fg_color,0.9);
+        width: 2.3em; height: 1.8em;
+        border-radius: 2px;
+        padding: 0.5em 0 0;
+        margin: 6px;
+        background-color: transparentize($fg_color,0.7);
         color: $bg_color;
       }
 
