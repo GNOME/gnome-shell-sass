@@ -972,6 +972,21 @@ StScrollBar {
             font-size: .9em;
           }
 
+          .message-media-control {
+            padding: 6px;
+
+            &:last-child:ltr { padding-right: 18px; }
+            &:last-child:rtl { padding-left: 18px; }
+          }
+
+          .media-message-cover-icon {
+            icon-size: 32px;
+            &.fallback {
+              icon-size: 16px;
+              padding: 8px;
+              border: 1px solid $borders_color; }
+          }
+
 
   // a little unstructured mess:
 
