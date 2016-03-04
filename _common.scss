@@ -478,6 +478,11 @@ StScrollBar {
     font-weight: bold;
   }
 
+  .geolocation-dialog-reason {
+    color: darken($fg_color,40%);
+    font-weight: bold;
+  }
+
 /* Network Agent Dialog */
 
 .network-dialog-secret-table {
