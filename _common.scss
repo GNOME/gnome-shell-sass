@@ -679,6 +679,9 @@ StScrollBar {
     height: 96px;
   }
 
+/* Window Cycler */
+.cycler-highlight { border: 5px solid $selected_bg_color; }
+
 /* Workspace Switcher */
 .workspace-switcher-group { padding: 12px; }
 
