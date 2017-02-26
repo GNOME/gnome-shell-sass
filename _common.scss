@@ -994,36 +994,37 @@ StScrollBar {
         }
 
         .message-list-sections {
-          spacing: 1.5em;
+          spacing: 1em;
         }
 
         .message-list-section,
         .message-list-section-list {
-          spacing: 0.7em;
+          spacing: 0.4em;
         }
 
         .message {
-          background-color: lighten($bg_color,5%);
-          &:hover,&:focus { background-color: lighten($bg_color,15%); }
+          &:hover,&:focus { background-color: lighten($bg_color,5%); }
           border-radius: 3px;
         }
 
           .message-icon-bin {
-            padding: 8px 0px 8px 8px;
-            &:rtl { padding: 8px 8px 8px 0px; }
+            padding: 10px 3px 10px 10px;
+            &:rtl { padding: 10px 10px 10px 3px; }
           }
 
           .message-icon-bin > StIcon {
-            icon-size: 32px;
+            color: darken($fg_color,20%);
+            icon-size: 16px;
+            -st-icon-style: symbolic;
           }
 
           .message-secondary-bin {
-            &:ltr { padding-left: 8px; }
-            &:rtl { padding-right: 8px; }
+            padding: 0 12px;
           }
 
-          .message-secondary-bin {
+          .message-secondary-bin > .event-time {
             color: darken($fg_color,40%);
+            font-size: 0.7em;
           }
 
           .message-secondary-bin > StIcon {
@@ -1031,24 +1032,23 @@ StScrollBar {
           }
 
           .message-title {
-            font-weight: bold;
-            font-size: 1.1em;
+            color: darken($fg_color,5%);
           }
 
           .message-content {
-            padding: 8px;
-            font-size: .9em;
+            color: darken($fg_color,20%);
+            padding: 10px;
           }
 
           .message-media-control {
-            padding: 6px;
+            padding: 12px;
 
             &:last-child:ltr { padding-right: 18px; }
             &:last-child:rtl { padding-left: 18px; }
           }
 
           .media-message-cover-icon {
-            icon-size: 32px;
+            icon-size: 48px !important;
             &.fallback {
               color: lighten($bg_color,10%);
               background-color: $bg_color;
