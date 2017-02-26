@@ -987,6 +987,12 @@ StScrollBar {
         width: 31.5em;
       }
 
+        .message-list-clear-button.button {
+          background-color: transparent;
+          &:hover,&:focus { background-color: lighten($bg_color,5%); }
+          margin: 1.5em 1.5em 0;
+        }
+
         .message-list-sections {
           spacing: 1.5em;
         }
