@@ -1049,9 +1049,11 @@ StScrollBar {
 
           .message-media-control {
             padding: 12px;
+            color: darken($fg_color, 20%);
 
             &:last-child:ltr { padding-right: 18px; }
             &:last-child:rtl { padding-left: 18px; }
+            &:hover { color: $fg_color; }
             &:insensitive { color: darken($fg_color,40%); }
           }
 
