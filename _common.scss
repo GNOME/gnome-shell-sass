@@ -1234,7 +1234,6 @@ StScrollBar {
     background-color: transparentize($osd_bg_color,0.3);
     border-radius: 8px;
     padding: 4px 12px;
-    -shell-caption-spacing: 12px;
     &:hover { background-color: $selected_bg_color; color: $selected_fg_color; }
   }
 
