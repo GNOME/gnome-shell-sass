@@ -1313,8 +1313,8 @@ StScrollBar {
     height: 1px;
   }
 
-  .list-search-result-content { spacing: 12px; padding: 12px; }
-  .list-search-result-title { font-size: 1.5em; color: darken($osd_fg_color,5%); }
+  .list-search-result-content { spacing: 30px; }
+  .list-search-result-title { font-size: 1.5em; color: darken($osd_fg_color,5%); spacing: 12px; }
   .list-search-result-description { color: darken($osd_fg_color,15%); }
   .search-provider-icon { padding: 15px; }
   .search-provider-icon-more {
@@ -1735,7 +1735,7 @@ $legacy_icon_size: 24px;
     .vertical & { padding-top: 0.5em; }
     .horizontal & { padding-left: 0.5em; }
   }
-  
+
   .candidate-page-button {
     padding: 4px;
   }
