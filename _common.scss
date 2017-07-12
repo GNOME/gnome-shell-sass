@@ -1305,13 +1305,7 @@ StScrollBar {
   }
   .list-search-results { spacing: 3px; }
 
-  .search-section-separator {
-    -gradient-height: 1px;
-    -gradient-start: rgba(255,255,255,0);
-    -gradient-end: rgba(255,255,255,0.1);
-    -margin-horizontal: 1.5em;
-    height: 1px;
-  }
+  .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
 
   .list-search-result-content { spacing: 30px; }
   .list-search-result-title { font-size: 1.5em; color: darken($osd_fg_color,5%); spacing: 12px; }
