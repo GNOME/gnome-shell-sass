@@ -480,6 +480,11 @@ StScrollBar {
   .message-dialog-title { color: darken($osd_fg_color,25%); }
 }
 
+/* Inhibit-Shortcuts Dialog */
+.inhibit-shortcuts-dialog {
+  spacing: 30px;
+}
+
 /* Network Agent Dialog */
 
 .network-dialog-secret-table {
