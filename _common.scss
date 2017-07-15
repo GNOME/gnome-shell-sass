@@ -205,6 +205,31 @@ StScrollBar {
     @include fontsize($font-size * 1.3);
   }
 
+/* Message Dialog */
+  .message-dialog-main-layout {
+    padding: 12px 20px 0;
+    spacing: 12px;
+  }
+
+  .message-dialog-content {
+    max-width: 28em;
+    spacing: 20px;
+  }
+
+  .message-dialog-icon {
+    min-width: 48px;
+    icon-size: 48px;
+  }
+
+  .message-dialog-title {
+    font-weight: bold;
+  }
+
+  .message-dialog-subtitle {
+    color: darken($fg_color,40%);
+    font-weight: bold;
+  }
+
 /* End Session Dialog */
 .end-session-dialog {
   spacing: 42px;
