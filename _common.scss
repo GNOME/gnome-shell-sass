@@ -1335,6 +1335,13 @@ StScrollBar {
   }
   //.app-display { spacing: 20px; }
 
+  .system-action-icon {
+    background-color: black;
+    color: white;
+    border-radius: 99px;
+    icon-size: 48px;
+  }
+
   .app-view-controls { //favorties | all toggle container
     padding-bottom: 32px;
   }
