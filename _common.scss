@@ -1152,11 +1152,11 @@ StScrollBar {
   background-size: 32px;
   height: 32px;
   width: 32px;
+  -shell-close-overlap: 16px;
+
+  &:hover { background-image: url("resource:///org/gnome/shell/theme/close-window-hover.svg"); }
+  &:active { background-image: url("resource:///org/gnome/shell/theme/close-window-active.svg"); }
 }
-  .window-close {
-    -shell-close-overlap: 16px;
-    &:rtl { -st-background-image-shadow: 2px 2px 6px rgba(0,0,0,0.5); }
-  }
 
 /* NETWORK DIALOGS */
 
