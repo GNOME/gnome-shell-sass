@@ -1032,18 +1032,18 @@ StScrollBar {
         }
 
           .message-icon-bin {
-            padding: 10px 3px 10px 10px;
-            &:rtl { padding: 10px 10px 10px 3px; }
+            padding: 0.68em 0.2em 0.68em 0.68em;
+            &:rtl { padding: 0.68em 0.68em 0.68em 0.2em; }
           }
 
           .message-icon-bin > StIcon {
             color: darken($fg_color,20%);
-            icon-size: 16px;
+            icon-size: 1.09em;
             -st-icon-style: symbolic;
           }
 
           .message-secondary-bin {
-            padding: 0 12px;
+            padding: 0 0.82em;;
           }
 
           .message-secondary-bin > .event-time {
@@ -1055,7 +1055,7 @@ StScrollBar {
           }
 
           .message-secondary-bin > StIcon {
-            icon-size: 16px;
+            icon-size: 1.09em;
           }
 
           .message-title {
