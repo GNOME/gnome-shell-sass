@@ -1629,22 +1629,19 @@ StScrollBar {
     background-color: transparentize($osd_bg_color, 0.3);
 }
 
-  .keyboard-layout {
-    spacing: 10px;
-    padding: 10px;
+  .key-container {
+    padding: 4px;
+    spacing: 4px;
   }
 
-  .keyboard-row { spacing: 15px; }
-
   .keyboard-key {
-    @include button(normal);
+    background-color: #393f3f;
     min-height: 2em;
     min-width: 2em;
     font-size: 14pt;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid $borders-color;
-    color: white;
+    border-radius: 3px;
+    border: 1px solid #464d4d;
+    color: #e5e5e5;
     &:focus { @include button(focus); }
     &:hover,&:checked { @include button(hover); }
     &:active { @include button(active);}
@@ -1652,6 +1649,14 @@ StScrollBar {
       background-color: $osd_bg_color;
       color: $osd_fg_color;
       border-color: $osd_borders_color;
+    }
+    &.default-key {
+      border-color: #2d3232;
+      background-color: #1d2020;
+    }
+    &.enter-key {
+      border-color: #005684;
+      background-color: #006098;
     }
   }
 
