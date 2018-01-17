@@ -837,7 +837,7 @@ StScrollBar {
       color: #ccc;
       text-shadow: none;
 
-      &:hover {
+      &:hover, &:active, &:overview, &:focus, &:checked {
         color: lighten($fg_color, 10%);
       }
     }
