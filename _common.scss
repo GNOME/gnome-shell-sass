@@ -1624,6 +1624,11 @@ StScrollBar {
 
 //Keyboard
 /* On-screen Keyboard */
+.word-suggestions {
+    font-size: 14pt;
+    spacing: 12px;
+    min-height: 20pt;
+}
 
 #keyboard {
     background-color: transparentize($osd_bg_color, 0.3);
